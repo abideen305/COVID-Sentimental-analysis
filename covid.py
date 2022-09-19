@@ -155,9 +155,9 @@ def predict_sentiment(text):
     prediction = int(svm.predict(tw).round().item())
     #prediction = int(tr.predict(tw).round().item())
     if prediction == 0:
-        return 'Negative. Not like to take the vaccine'
+        return 'Negative. Not likely to take the vaccine'
     else:
-        return 'Positive. Likey to take the vaccine'
+        return 'Positive. Likely to take the vaccine'
     #print("Predicted label: ", sentiment_label[1][prediction])
 
 
